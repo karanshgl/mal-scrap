@@ -18,9 +18,9 @@ When develping new modules or patches, please try to comply to the general code 
 Viper is now using [BitHub](https://whispersystems.org/blog/bithub) system to reward developers and contributors with Bitcoins. You can read more details about it [here](http://viper.li/blog/2014-07-15-viper-bitcoin.html) and you can start donating Bitcoins to this wallet **15xrTWmduftdHezxiCZyC1yFLo5RJXaAZS**. This is the current reward per commit:
 
 [![BitHub](https://viperbithub.herokuapp.com/v1/status/payment/commit)](http://viper.li/blog/2014-07-15-viper-bitcoin.html)-->
-
+This project is based on frennkie's viper [repo](https://github.com/frennkie/viper/tree/django_web_wip) 
 <hr />
-This project is based on frennkie's viper [repo](https://github.com/frennkie/viper/tree/django_web_wip)
+
 ### Viper API & Web Interface
 
 Django (with Django Rest Framework)
