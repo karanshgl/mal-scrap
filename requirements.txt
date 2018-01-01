@@ -1,3 +1,4 @@
 -r requirements-base.txt
 -r requirements-modules.txt
 -r requirements-web.txt
+-r requirements-extra.txt
