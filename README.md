@@ -20,7 +20,7 @@ Viper is now using [BitHub](https://whispersystems.org/blog/bithub) system to re
 [![BitHub](https://viperbithub.herokuapp.com/v1/status/payment/commit)](http://viper.li/blog/2014-07-15-viper-bitcoin.html)-->
 
 <hr />
-
+This project is based on frennkie's viper [repo](https://github.com/frennkie/viper/tree/django_web_wip)
 ### Viper API & Web Interface
 
 Django (with Django Rest Framework)
@@ -40,47 +40,12 @@ pip install -rrequirements.txt
 #### Setup and start Django
 
 ```
-./viper-web
+./manage.py runserver
 ```
 
 #### Site
 
 http://127.0.0.1:8080/
-
-#### API (including documentation)
-
-http://127.0.0.1:8080/api/v3/
-
-#### Upload a file with cURL using API
-
-```
-curl -X POST -H 'Authorization: Token 12...89' -S -F "file=@/tmp/file1.txt;type=text/plain;filename=your_file_name.txt" http://127.0.0.1:8080/api/v3/project/default/malware/upload/
-```
-#### Upload a file with httpie using API
-
-```
-http -a admin:password -f POST http://127.0.0.1:8080/api/v3/project/honk/malware/upload/ tag_list='tag1 tag2 foo bar' file@/tmp/file1.txt
-```
-
-
-#### Accessing API using httpie
-
-##### Get Tags
-
-```
-http -a admin:password http://127.0.0.1:8080/api/v3/project/default/tags/
-or
-http http://127.0.0.1:8080/api/v3/project/default/tags/ "Authorization: Token 12...89"
-```
-
-##### Change Tag name
-
-```
-http -a admin:password http://127.0.0.1:8080/api/v3/project/default/tags/1/ tag="new_tag"
-or
-http http://127.0.0.1:8080/api/v3/project/default/tags/1/ "Authorization: Token 12...89" tag="new_tag"
-```
-
 
 #### Mac Issues
 
@@ -93,12 +58,4 @@ Upload doesn't do anything
 ```
 Missing dependency, install virustotal-api (`pip install virustotal-api`)
 Missing dependency, install virustotal-api (`pip install virustotal-api`)
-Something went wrong: name 'BeautifulSoup' is not defined
 ```
-
-##### Hex
-
-```
-/bin/sh: hd: command not found
-```
-
