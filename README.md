@@ -29,12 +29,9 @@ Django (with Django Rest Framework)
 #### Clone and check out and install requirements
 
 ```
-git clone https://github.com/frennkie/viper
+git clone https://github.com/karanshgl/map-scrap
 cd viper
-git checkout django
-git submodule init
-git submodule update
-pip install -rrequirements.txt
+pip install -r requirements.txt
 ```
 
 #### Setup and start Django
